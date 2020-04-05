@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Registro - Control App</title>
+        <title>Modificar - Control App</title>
 
         <!-- Icons -->
         <script src="https://kit.fontawesome.com/ab9be42588.js"></script>
@@ -123,8 +123,8 @@
         </div>
 
         <div class="formulario">
-            <p>REGISTRO</p>
-            <h4>Crear nuevo usuario:</h4>
+            <p>MODIFICAR</p>
+            <h4>Modificar usuario usuario:</h4>
             <form action="" method="get" class="registro">
                 <h3>Nombre Completo:</h3>
                 <input type="text" name="name" id="name" class="campo">
@@ -134,7 +134,7 @@
                 <input type="password" name="pwd" id="pwd" class="campo">
                 <h3>Confirmar Contraseña:</h3>
                 <input type="password" name="pwd2" id="pwd2" class="campo"><br><br>
-                <input type="submit" value="Registrar" class="regist">
+                <input type="submit" value="Aceptar cambios" class="regist">
                 <!-- Cambiar a /users para ver la vista del administrador princpal -->
                 <!-- Cambiar a /temporary-users para ver la vista del usuario normal -->
                 <a href="/users"><button type="button" value="Cancelar" class="regist1">Cancelar</button></a>

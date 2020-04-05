@@ -123,8 +123,9 @@
             <br>
             <button type="button" value="Inicio" class="regist">Inicio</button>
             <a href="/login"><button type="button" value="Ingresar" class="campo">Ingresar</button></a>
-            <button type="button" value="Acerca" class="campo">Acerca</button>
-            <button type="button"  value="Contacto" class="campo">Contacto</button>
+            <a href="/about-us"><button type="button" value="Acerca" class="campo">Acerca</button></a>
+            <a href="/contact"><button type="button" value="Contacto" class="campo">Contacto</button></a>
+
             <form action="" method="get" class="registro">
             <p>MI HOGAR</p>
             <br>

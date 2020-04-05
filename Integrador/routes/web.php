@@ -17,3 +17,23 @@ Route::get('/register', function() {
 Route::get('/admin', function() {
     return view('admin');
 });
+
+Route::get('/users', function() {
+    return view('users');
+});
+
+Route::get('/modify-user', function() {
+    return view('modify-user');
+});
+
+Route::get('/temporary-users', function() {
+    return view('temporary-users');
+});
+
+Route::get('/about-us', function() {
+    return view('about');
+});
+
+Route::get('/contact', function() {
+    return view('contact');
+});

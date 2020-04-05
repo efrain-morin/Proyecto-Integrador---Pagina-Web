@@ -123,9 +123,12 @@
         <div class="formulario">
             <br>
             <input type="submit" value="Inicio" class="regist">
-            <a href="/register"><button type="button" value="Administrar" class="campo">Administrar</button></a>
+            <!-- Cambiar a /users para ver la vista del administrador princpal -->
+            <!-- Cambiar a /temporary-users para ver la vista del usuario normal -->
+            <a href="/temporary-users"><button type="button" value="Administrar" class="campo">Administrar</button></a>
             <a href="/"><button type="button" value="Salir" class="campo">Salir</button></a>
-            <input type="submit"  value="Contacto" class="campo">
+            <a href="/contact"><button type="button" value="Contacto" class="campo">Contacto</button></a>
+
             <form action="" method="get" class="registro">
             <p>MI HOGAR</p>
             <br>
