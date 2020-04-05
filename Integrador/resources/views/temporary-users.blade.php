@@ -103,7 +103,7 @@
                 <thead>
                     <tr>
                         <th>Nombre Completo</th>
-                        <th>Parenteco</th>
+                        <th>Parentesco</th>
                         <th>Email</th>
                         <th>Fecha de expiración</th>
                         <th></th>

@@ -125,7 +125,7 @@
             <input type="submit" value="Inicio" class="regist">
             <!-- Cambiar a /users para ver la vista del administrador princpal -->
             <!-- Cambiar a /temporary-users para ver la vista del usuario normal -->
-            <a href="/temporary-users"><button type="button" value="Administrar" class="campo">Administrar</button></a>
+            <a href="/users"><button type="button" value="Administrar" class="campo">Administrar</button></a>
             <a href="/"><button type="button" value="Salir" class="campo">Salir</button></a>
             <a href="/contact"><button type="button" value="Contacto" class="campo">Contacto</button></a>
 
