@@ -38,8 +38,8 @@ body {
     width: 1000px !important;
     margin: 0px auto !important;
     padding-top: 20px !important;
-    color: black;
-    font-size: 20px;
+    color: black !important;
+    font-size: 20px !important;
 }
 
 .texto {
@@ -50,11 +50,11 @@ body {
 }
 
 .tabla a {
-    color: black;
+    color: black !important;
 }
 
 .tabla a:hover {
-    color: white;
+    color: white !important;
 }
 
 .boton {
@@ -73,16 +73,37 @@ body {
     color: black !important;
 }
 
-.btn-lg {
-    background-color: #002C55 !important;
-    border: none !important;
-    color: white !important;
+.ipt-text {
+    width: 350px !important;
     text-align: center !important;
-    align-items: center !important;
     margin: 0px auto !important;
-    height: 35px !important;
-    width: 180px !important;
-    padding-top: 6px !important;
+}
+
+.icn-lgn {
+    width: 35px !important;
+    background-color: #F58634 !important;
+    border: none !important;
+    color: black !important;
+}
+
+.frm-lgn input {
+    border: none !important;
+    border-bottom: 2px solid #F58634 !important;
+    background-color: #295482 !important;
+    color: white !important;
+}
+
+.frm-lgn h3 {
+    text-align: center !important;
+}
+
+.modal-header h4 {
+    padding-left: 30px !important;
+}
+
+.modal-footer button[type=submit]:hover {
+    background-color: #002C55 !important;
+    color: white !important;
 }
 
 .modal {
@@ -124,35 +145,13 @@ body {
     margin-bottom: 10px !important;
 }
 
-.frm-lgn input {
+.btn-lg {
     border: none !important;
-    border-bottom: 2px solid #F58634 !important;
-    background-color: #295482 !important;
     color: white !important;
-}
-
-.frm-lgn h3 {
     text-align: center !important;
-}
-
-.ipt-text {
-    width: 350px !important;
-    text-align: center !important;
+    align-items: center !important;
     margin: 0px auto !important;
-}
-
-.icn-lgn {
-    width: 35px !important;
-    background-color: #F58634 !important;
-    border: none !important;
-    color: black !important;
-}
-
-.modal-header h4 {
-    padding-left: 30px !important;
-}
-
-.modal-footer button[type=submit]:hover {
-    background-color: #002C55 !important;
-    color: white !important;
+    height: 35px !important;
+    width: 180px !important;
+    padding-top: 6px !important;
 }

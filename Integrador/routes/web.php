@@ -14,6 +14,10 @@ Route::get('/register', function() {
     return view('register');
 });
 
+Route::get('/register-temporary', function() {
+    return view('register-temporary');
+});
+
 Route::get('/admin', function() {
     return view('admin');
 });

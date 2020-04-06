@@ -13,76 +13,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            * {
-                margin: 0 !important;
-                padding: 0 !important;
-            }
-
-            body {
-                font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif !important;
-                background-color: #295482 !important;
-            }
-
-            .barraNaranja {
-                width: 100% !important;
-                background-color: #F58634 !important;
-            }
-
-            .layoutNaranja {
-                width: 1000px !important;
-                height: 50px !important;
-                margin: 0px auto !important;
-                padding-top: 15px !important;
-                font-size: 15px !important;
-            }
-
-            .layoutNaranja a {
-                text-decoration: none !important;
-                color: #002C55 !important;
-                float: left !important;
-            }
-
-            .redes-sociales {
-                float: right !important;
-            }
-
-            .redes-sociales a {
-                padding-left: 30px !important;
-            }
-            
-            .tabla {
-                width: 1300px !important;
-                margin: 0px auto !important;
-                padding-top: 20px !important;
-                color: white;
-                font-size: 20px;
-            }
-
-            .texto {
-                color: white;
-                font-size: 30px;
-                margin-left: 35px !important;
-                margin-top: 40px !important;
-            }
-
-            .tabla a {
-                color: black;
-            }
-
-            .tabla a:hover {
-                color: white;
-            }
-
-            .boton {
-                margin: 50px !important;
-            }
-            
-            .inicio {
-                margin-left: 40px !important;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="styles/temporary.css">
     </head>
     <body>
         <div class="barraNaranja">
@@ -116,39 +47,86 @@
                         <td>Padre</td>
                         <td>efrain@morin.com</td>
                         <td>20/12/2021</td>
-                        <td><a href="/modify-user">MODIFICAR</a></td>
-                        <td><a href="#">ELIMINAR</a></td>
-                    </tr>
-                    <tr>
-                        <td>Ivan Cadena</td>
-                        <td>Hijo</td>
-                        <td>ivan@cadena.com</td>
-                        <td>20/12/2021</td>
-                        <td><a href="/modify-user">MODIFICAR</a></td>
-                        <td><a href="#">ELIMINAR</a></td>
+                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
+                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                     <tr>
                         <td>Sanjuana Guardiola</td>
                         <td>Esposa</td>
                         <td>sanjuana@guardiola.com</td>
                         <td>20/12/2021</td>
-                        <td><a href="/modify-user">MODIFICAR</a></td>
-                        <td><a href="#">ELIMINAR</a></td>
-                    </tr>
-                    <tr>
-                        <td>Oscar Sanchez</td>
-                        <td>Hijo</td>
-                        <td>oscar@sanchez.com</td>
-                        <td>20/12/2021</td>
-                        <td><a href="/modify-user">MODIFICAR</a></td>
-                        <td><a href="#">ELIMINAR</a></td>
+                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
+                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
         
+        <div class="modal fade" id="modify">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>×</span>
+                        </button>
+                        <br>
+                        <h4>Modificar Usuario</h4>
+                        <br>
+                    </div>
+                    <div class="modal-body frm-lgn">
+                        <br><br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="pwd-ant" type="password" class="form-control" name="pwd-ant" placeholder="Contraseña anterior">
+                        </div>
+                        <br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="pwd" type="password" class="form-control" name="pwd" placeholder="Contraseña nueva">
+                        </div>
+                        <br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="pwd-re" type="password" class="form-control" name="pwd-re" placeholder="Vuelve a ingresar la contraseña">
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="modal-footer">
+                        <br>
+                        <button type="reset" value="cancelar" class="btn btn-info btn-log2" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" value="guardar" class="btn btn-warning btn-log">Guardar Cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="eliminate">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>×</span>
+                        </button>
+                        <br>
+                        <h4>Eliminar Usuario</h4>
+                        <br>
+                    </div>
+                    <div class="modal-body frm-lgn">
+                        <br>
+                            <h3>¿Deseas eliminar al usuario?</h3>
+                        <br>
+                    </div>
+                    <div class="modal-footer">
+                        <br>
+                        <button type="reset" value="cancelar" class="btn btn-info btn-log2" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" value="guardar" class="btn btn-danger btn-log2">Eliminar Usuario</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="boton">
-            <a href="/register" class="btn btn-success btn-lg" role="button">Crear llave temporal</a>
+            <a href="/register-temporary" class="btn btn-success btn-lg" role="button">Crear llave temporal</a>
         </div>
     </body>
 </html>

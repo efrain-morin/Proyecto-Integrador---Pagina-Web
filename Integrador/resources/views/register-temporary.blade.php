@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Registro - Control App</title>
+        <title>Registro Usuario Temporal - Control App</title>
 
         <!-- Icons -->
         <script src="https://kit.fontawesome.com/ab9be42588.js"></script>
@@ -50,28 +50,18 @@
                 </div>
                 <br>
                 <div class="input-group ipt-text">
-                    <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-calendar"></i></span>
-                    <input id="date" type="date" class="form-control" name="date" placeholder="Fecha de Nacimiento">
-                </div>
-                <br>
-                <div class="input-group ipt-text">
-                    <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-book"></i></span>
-                    <input id="curp" type="text" class="form-control" name="curp" placeholder="CURP">
-                </div>
-                <br>
-                <div class="input-group ipt-text">
                     <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-envelope"></i></span>
                     <input id="email" type="email" class="form-control" name="email" placeholder="Correo Electrónico">
                 </div>
                 <br>
                 <div class="input-group ipt-text">
-                    <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-earphone"></i></span>
-                    <input id="tel" type="number" class="form-control" name="tel" placeholder="Teléfono">
+                    <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-phone"></i></span>
+                    <input id="cel" type="number" class="form-control" name="cel" placeholder="Celular">
                 </div>
                 <br>
                 <div class="input-group ipt-text">
-                    <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-phone"></i></span>
-                    <input id="cel" type="number" class="form-control" name="cel" placeholder="Celular">
+                    <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-calendar"></i></span>
+                    <input id="date" type="date" class="form-control" name="date" placeholder="Fecha límite">
                 </div>
                 <br>
                 <div class="input-group ipt-text">

@@ -28,12 +28,14 @@
                 </div>
             </div>
         </div>
+
+        <div></div>
         <div class="texto">
             <p>Crear, modificar o eliminar usuarios:</p>
         </div>
         <div class="table-responsive tabla">
             <table class="table table-bordered">
-                <thead>
+                <thead class="thead-dark">
                     <tr>
                         <th>Nombre Completo</th>
                         <th>Usuario</th>
@@ -50,7 +52,7 @@
                         <td>efrain@morin.com</td>
                         <td>26/07/2019</td>
                         <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
-                        <td><a href="#">ELIMINAR</a></td>
+                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                     <tr>
                         <td>Sanjuana Guardiola</td>
@@ -58,7 +60,7 @@
                         <td>sanjuana@guardiola.com</td>
                         <td>08/02/2020</td>
                         <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
-                        <td><a href="#">ELIMINAR</a></td>
+                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -71,13 +73,82 @@
                         <button type="button" class="close" data-dismiss="modal">
                             <span>×</span>
                         </button>
+                        <br>
                         <h4>Modificar Usuario</h4>
+                        <br>
                     </div>
-                    <div class="modal-body">
-                        "Formulario"
+                    <div class="modal-body frm-lgn">
+                        <br><br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="name" type="text" class="form-control" name="name" placeholder="Nombre(s)">
+                        </div>
+                        <br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="apl-pat" type="text" class="form-control" name="apl-pat" placeholder="Apellido Paterno">
+                        </div>
+                        <br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="apl-mat" type="text" class="form-control" name="apl-mat" placeholder="Apellido Materno">
+                        </div>
+                        <br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input id="date" type="date" class="form-control" name="date" placeholder="Fecha de Nacimiento">
+                        </div>
+                        <br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-book"></i></span>
+                            <input id="curp" type="text" class="form-control" name="curp" placeholder="CURP">
+                        </div>
+                        <br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input id="email" type="email" class="form-control" name="email" placeholder="Correo Electrónico">
+                        </div>
+                        <br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input id="tel" type="number" class="form-control" name="tel" placeholder="Teléfono">
+                        </div>
+                        <br>
+                        <div class="input-group ipt-text">
+                            <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-phone"></i></span>
+                            <input id="cel" type="number" class="form-control" name="cel" placeholder="Celular">
+                        </div>
+                        <br><br>
                     </div>
                     <div class="modal-footer">
-                        <input type="submit" class="btn btn-primary" value="Guardar">
+                        <br>
+                        <button type="reset" value="cancelar" class="btn btn-info btn-log2" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" value="guardar" class="btn btn-warning btn-log">Guardar Cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="eliminate">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>×</span>
+                        </button>
+                        <br>
+                        <h4>Eliminar Usuario</h4>
+                        <br>
+                    </div>
+                    <div class="modal-body frm-lgn">
+                        <br>
+                            <h3>¿Deseas eliminar al usuario?</h3>
+                        <br>
+                    </div>
+                    <div class="modal-footer">
+                        <br>
+                        <button type="reset" value="cancelar" class="btn btn-info btn-log2" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" value="guardar" class="btn btn-danger btn-log2">Eliminar Usuario</button>
                     </div>
                 </div>
             </div>
