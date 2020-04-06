@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     @extends('layouts.head')
+    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,76 +14,8 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            * {
-                margin: 0 !important;
-                padding: 0 !important;
-            }
+        <link rel="stylesheet" type="text/css" href="styles/users.css">
 
-            body {
-                font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif !important;
-                background-color: #295482 !important;
-            }
-
-            .barraNaranja {
-                width: 100% !important;
-                background-color: #F58634 !important;
-            }
-
-            .layoutNaranja {
-                width: 1000px !important;
-                height: 50px !important;
-                margin: 0px auto !important;
-                padding-top: 15px !important;
-                font-size: 15px !important;
-            }
-
-            .layoutNaranja a {
-                text-decoration: none !important;
-                color: #002C55 !important;
-                float: left !important;
-            }
-
-            .redes-sociales {
-                float: right !important;
-            }
-
-            .redes-sociales a {
-                padding-left: 30px !important;
-            }
-            
-            .tabla {
-                width: 1300px !important;
-                margin: 0px auto !important;
-                padding-top: 20px !important;
-                color: white;
-                font-size: 20px;
-            }
-
-            .texto {
-                color: white;
-                font-size: 30px;
-                margin-left: 35px !important;
-                margin-top: 40px !important;
-            }
-
-            .tabla a {
-                color: black;
-            }
-
-            .tabla a:hover {
-                color: white;
-            }
-
-            .boton {
-                margin: 50px !important;
-            }
-            
-            .inicio {
-                margin-left: 40px !important;
-            }
-        </style>
     </head>
     <body>
         <div class="barraNaranja">
@@ -116,27 +49,38 @@
                         <td>efra456</td>
                         <td>efrain@morin.com</td>
                         <td>26/07/2019</td>
-                        <td><a href="/modify-user">MODIFICAR</a></td>
-                        <td><a href="#">ELIMINAR</a></td>
-                    </tr>
-                    <tr>
-                        <td>Ivan Cadena</td>
-                        <td>ivan456</td>
-                        <td>ivan@cadena.com</td>
-                        <td>28/08/2019</td>
-                        <td><a href="/modify-user">MODIFICAR</a></td>
+                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
                         <td><a href="#">ELIMINAR</a></td>
                     </tr>
                     <tr>
                         <td>Sanjuana Guardiola</td>
-                        <td>Sanjuis</td>
+                        <td>Sanjuis456</td>
                         <td>sanjuana@guardiola.com</td>
-                        <td>08/02/2019</td>
-                        <td><a href="/modify-user">MODIFICAR</a></td>
+                        <td>08/02/2020</td>
+                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
                         <td><a href="#">ELIMINAR</a></td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+
+        <div class="modal fade" id="modify">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>×</span>
+                        </button>
+                        <h4>Modificar Usuario</h4>
+                    </div>
+                    <div class="modal-body">
+                        "Formulario"
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-primary" value="Guardar">
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="boton">

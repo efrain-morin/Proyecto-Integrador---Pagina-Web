@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    @extends('layouts.head')
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,105 +13,8 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
+        <link rel="stylesheet" type="text/css" href="styles/about.css">
 
-            body {
-                font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif;
-                background-color: #295482;
-            }
-
-            .barraNaranja {
-                width: 100%;
-                background-color: #F58634;
-            }
-
-            .layoutNaranja {
-                width: 1000px;
-                height: 40px;
-                margin: 0px auto;
-                padding-top: 15px;
-            }
-
-            .layoutNaranja a {
-                text-decoration: none;
-                color: #002C55;
-                float: left;
-            }
-
-            .redes-sociales {
-                float: right;
-            }
-
-            .redes-sociales a {
-                padding-left: 30px;
-            }
-
-            .formulario {
-                text-align: center;
-            }
-
-            .formulario::after {
-                content: "";
-                background: url(img/departamento.jpg);
-                opacity: 0.5;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                position: absolute;
-                z-index: -1;   
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-color: #002C55;
-                height: 633px;
-            }
-
-            .formulario p {
-                text-align: center;
-                padding-top: 30px;
-                color: white;
-                font-size: 45px;
-            }
-
-            .registro {
-                padding-top: 80px;
-                color: white;
-                float: left;
-                margin-left: 150px;
-            }
-
-            .campo {
-                float: right;
-                border-radius: 30px;
-                height: 30px;
-                width: 150px;
-                border-color: #F58634;
-                background-color: #295482;
-                color: white;
-            }
-
-            .regist {
-                float: right;
-                height: 30px;
-                width: 150px;
-                color: black;
-                border-radius: 30px;
-                border-color: #F58634;
-                background-color: #F58634;
-                font-size: 20px;
-                margin-right: 150px;
-            }
-
-            .inicio {
-                margin-left: 40px !important;
-            }
-        </style>
     </head>
     <body>
         <div class="barraNaranja">
@@ -124,7 +28,8 @@
             </div>
         </div>
 
-        <div class="formulario">
+        <div class="formulario" style="background: url(img/departamento.jpg) !important; background-repeat: no-repeat !important;
+            background-position: center !important; background-size: cover !important; background-color: #002C55 !important; height: 633px !important; ">
             <br>
             
             <form action="" method="get" class="registro">

@@ -1,0 +1,93 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif !important;
+    background-color: #295482 !important;
+}
+
+.barraNaranja {
+    width: 100% !important;
+    background-color: #F58634 !important;
+}
+
+.layoutNaranja {
+    width: 1000px !important;
+    height: 50px !important;
+    margin: 0px auto !important;
+    padding-top: 15px !important;
+}
+
+.layoutNaranja a {
+    text-decoration: none !important;
+    color: #002C55 !important;
+    float: left !important;
+}
+
+.redes-sociales {
+    float: right !important;
+}
+
+.redes-sociales a {
+    padding-left: 30px !important;
+}
+
+.formulario {
+    text-align: center !important;
+}
+
+.formulario::after {
+    content: "" !important;
+    background: url(img/departamento.jpg) !important;
+    opacity: 0.5 !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    position: absolute !important;
+    z-index: -1 !important;   
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-color: #002C55 !important;
+    height: 633px !important;
+}
+
+.formulario p {
+    text-align: center !important;
+    padding-top: 50px !important;
+    color: white !important;
+    font-size: 40px !important;
+}
+
+.info {
+    padding-top: 80px !important;
+    color: white !important;
+    float: left !important;
+    margin-left: 150px !important;
+}
+
+.inicio {
+    background-color: #F58634 !important;
+    border: none !important;
+    font-size: 25px !important;
+    margin-right: 20px !important;
+    width: 130px !important;
+    color: black !important;
+}
+
+.btn-new {
+    background-color: #002C55 !important;
+    border: none !important;
+    margin-right: 20px !important;
+    font-size: 25px !important;
+    width: 130px !important;
+}
+
+.formulario a:hover {
+    background-color: #F58634 !important;
+    border: none !important;
+    color: black !important;
+}

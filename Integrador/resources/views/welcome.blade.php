@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    @extends('layouts.head')
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,101 +13,8 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
+        <link rel="stylesheet" type="text/css" href="styles/welcome.css">
 
-            body {
-                font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif;
-                background-color: #295482;
-            }
-
-            .barraNaranja {
-                width: 100%;
-                background-color: #F58634;
-            }
-
-            .layoutNaranja {
-                width: 1000px;
-                height: 40px;
-                margin: 0px auto;
-                padding-top: 15px;
-            }
-
-            .layoutNaranja a {
-                text-decoration: none;
-                color: #002C55;
-                float: left;
-            }
-
-            .redes-sociales {
-                float: right;
-            }
-
-            .redes-sociales a {
-                padding-left: 30px;
-            }
-
-            .formulario {
-                text-align: center;
-            }
-
-            .formulario::after {
-                content: "";
-                background: url(img/departamento.jpg);
-                opacity: 0.5;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                position: absolute;
-                z-index: -1;   
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-color: #002C55;
-                height: 633px;
-            }
-
-            .formulario p {
-                text-align: center;
-                padding-top: 50px;
-                color: white;
-                font-size: 40px;
-            }
-
-            .registro {
-                padding-top: 80px;
-                color: white;
-                float: left;
-                margin-left: 150px;
-            }
-
-            .campo {
-                float: right;
-                border-radius: 30px;
-                height: 30px;
-                width: 150px;
-                border-color: #F58634;
-                background-color: #295482;
-                color: white;
-            }
-
-            .regist {
-                float: right;
-                height: 30px;
-                width: 150px;
-                color: black;
-                border-radius: 30px;
-                border-color: #F58634;
-                background-color: #F58634;
-                font-size: 20px;
-                margin-right: 150px;
-            }
-        </style>
     </head>
     <body>
         <div class="barraNaranja">
@@ -119,20 +27,22 @@
             </div>
         </div>
 
-        <div class="formulario">
+        <div class="formulario" style="background: url(img/departamento.jpg) !important; background-repeat: no-repeat !important;
+            background-position: center !important; background-size: cover !important; background-color: #002C55 !important; height: 633px !important; ">
             <br>
-            <button type="button" value="Inicio" class="regist">Inicio</button>
-            <a href="/login"><button type="button" value="Ingresar" class="campo">Ingresar</button></a>
-            <a href="/about-us"><button type="button" value="Acerca" class="campo">Acerca</button></a>
-            <a href="/contact"><button type="button" value="Contacto" class="campo">Contacto</button></a>
-
-            <form action="" method="get" class="registro">
-            <p>MI HOGAR</p>
-            <br>
-            <p>Bienvenido</p>
-            <h5>La forma mas segura de cuidar tu hogar</h5>
+            <button type="button" value="Inicio" class="btn btn-primary inicio">Inicio</button>
+            <a class="btn btn-primary btn-new" href="/login" role="button">Ingresar</a>
+            <a class="btn btn-primary btn-new" href="/about-us" role="button">Acerca</a>
+            <a class="btn btn-primary btn-new" href="/contact" role="button">Contacto</a>
             
-            </form>
+            <div class="info">
+                <br>
+                <p>MI HOGAR</p>
+                <br>
+                <p>Bienvenido</p>
+                <h5>La forma mas segura de cuidar tu hogar</h5>
+            </div>
+            <img src="img/logo.svg" alt="">
         </div>
     </body>
 </html>
