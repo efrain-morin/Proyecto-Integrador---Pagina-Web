@@ -20,6 +20,10 @@ body {
     padding-top: 15px !important;
 }
 
+.layoutNaranja img {
+    float: left !important;
+}
+
 .layoutNaranja a {
     text-decoration: none !important;
     color: #002C55 !important;
@@ -36,6 +40,12 @@ body {
 
 .formulario {
     text-align: center !important;
+    width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.formulario .img {
+    padding-right: 20px !important;
 }
 
 .formulario::after {
@@ -57,9 +67,9 @@ body {
 
 .formulario p {
     text-align: center !important;
-    padding-top: 50px !important;
     color: white !important;
     font-size: 40px !important;
+    font-weight: 900 !important;
 }
 
 .info {
@@ -67,6 +77,7 @@ body {
     color: white !important;
     float: left !important;
     margin-left: 150px !important;
+    font-weight: bolder !important;
 }
 
 .inicio {
@@ -86,8 +97,14 @@ body {
     width: 130px !important;
 }
 
-.formulario a:hover {
+.formulario .btn-new:hover {
     background-color: #F58634 !important;
     border: none !important;
     color: black !important;
+}
+
+.formulario button:hover {
+    background-color: #002C55 !important;
+    border: none !important;
+    color: white !important;
 }

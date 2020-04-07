@@ -30,7 +30,7 @@
             <p>Tus accesos temporales</p>
         </div>
         <div class="table-responsive tabla">
-            <table class="table table-bordered">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Nombre Completo</th>
