@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif !important;
-    background-color: #295482 !important;
+    background-color: rgb(94, 95, 95) !important;
 }
 
 .barraNaranja {
@@ -110,8 +110,10 @@ body {
     border: none !important;
     font-size: 25px !important;
     margin-right: 20px !important;
-    width: 130px !important;
+    width: 150px !important;
+    border-radius: 15px !important;
     color: black !important;
+    padding: 5px !important;
 }
 
 .btn-new {
@@ -119,7 +121,9 @@ body {
     border: none !important;
     margin-right: 20px !important;
     font-size: 25px !important;
-    width: 130px !important;
+    width: 150px !important;
+    border-radius: 15px !important;
+    padding: 5px !important;
 }
 
 .formulario .btn-new:hover {

@@ -35,18 +35,19 @@ body {
 }
 
 .tabla {
-    width: 1000px !important;
+    width: 1100px !important;
     margin: 0px auto !important;
     padding-top: 20px !important;
     color: black !important;
     font-size: 20px !important;
+    border-radius: 20px !important;
 }
 
 table {
     background-color: white !important;
     text-align: left !important;
     border-collapse: collapse !important;
-    width: 100%;
+    width: 100% !important;
 }
 
 th, td {
@@ -54,7 +55,7 @@ th, td {
 }
 
 thead {
-    background-color: #F58634 !important;
+    background-color: rgb(100, 223, 75) !important;
     border-bottom: solid 5px black !important;
     color: black !important;
 }
@@ -93,6 +94,12 @@ tr:hover td {
     margin-left: 40px !important;
 }
 
+.button {
+    font-size: 15px !important;
+    padding: 7px 20px !important;
+    border-radius: 15px !important;
+}
+
 .boton a:hover {
     background-color: #F58634 !important;
     border: none !important;
@@ -123,8 +130,19 @@ tr:hover td {
     text-align: center !important;
 }
 
+.modal-header {
+    background-color: rgb(100, 223, 75);
+}
+
+.modal-header span {
+    margin-top: 5px !important;
+    padding: 10px !important;
+}
+
 .modal-header h4 {
     padding-left: 30px !important;
+    font-weight: bolder !important;
+    font-size: 25px !important;
 }
 
 .modal-footer button[type=submit]:hover {
@@ -177,7 +195,8 @@ tr:hover td {
     text-align: center !important;
     align-items: center !important;
     margin: 0px auto !important;
-    height: 35px !important;
-    width: 180px !important;
-    padding-top: 6px !important;
+    height: 40px !important;
+    width: 200px !important;
+    padding-top: 8px !important;
+    border-radius: 15px !important;
 }

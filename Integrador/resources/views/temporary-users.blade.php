@@ -47,16 +47,16 @@
                         <td>Padre</td>
                         <td>efrain@morin.com</td>
                         <td>20/12/2021</td>
-                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
-                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
+                        <td><a href="#" class="btn btn-warning button" data-toggle="modal" data-target="#modify">Modificar</a></td>
+                        <td><a href="#" class="btn btn-danger button" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                     <tr>
                         <td>Sanjuana Guardiola</td>
                         <td>Esposa</td>
                         <td>sanjuana@guardiola.com</td>
                         <td>20/12/2021</td>
-                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
-                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
+                        <td><a href="#" class="btn btn-warning button" data-toggle="modal" data-target="#modify">Modificar</a></td>
+                        <td><a href="#" class="btn btn-danger button" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                 </tbody>
             </table>

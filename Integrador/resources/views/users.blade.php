@@ -33,7 +33,7 @@
         <div class="texto">
             <p>Crear, modificar o eliminar usuarios:</p>
         </div>
-        <div class="table-responsive tabla">
+        <div class="table table-responsive tabla">
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
@@ -51,40 +51,40 @@
                         <td>efra456</td>
                         <td>efrain@morin.com</td>
                         <td>26/07/2019</td>
-                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
-                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
+                        <td><a href="#" class="btn btn-warning button" data-toggle="modal" data-target="#modify">Modificar</a></td>
+                        <td><a href="#" class="btn btn-danger button" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                     <tr>
                         <td>Sanjuana Guardiola</td>
                         <td>Sanjuis456</td>
                         <td>sanjuana@guardiola.com</td>
                         <td>08/02/2020</td>
-                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
-                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
+                        <td><a href="#" class="btn btn-warning button" data-toggle="modal" data-target="#modify">Modificar</a></td>
+                        <td><a href="#" class="btn btn-danger button" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                     <tr>
                         <td>Iván Cadena</td>
                         <td>Ivan456</td>
                         <td>ivan@cadena.com</td>
                         <td>16/09/2020</td>
-                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
-                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
+                        <td><a href="#" class="btn btn-warning button" data-toggle="modal" data-target="#modify">Modificar</a></td>
+                        <td><a href="#" class="btn btn-danger button" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                     <tr>
                         <td>Oscar Sánchez</td>
                         <td>Oscar456</td>
                         <td>oscar@sanchez.com</td>
                         <td>03/11/2020</td>
-                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
-                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
+                        <td><a href="#" class="btn btn-warning button" data-toggle="modal" data-target="#modify">Modificar</a></td>
+                        <td><a href="#" class="btn btn-danger button" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                     <tr>
                         <td>Manuel Briones</td>
                         <td>Briones456</td>
                         <td>manuel@Briones.com</td>
                         <td>30/05/2020</td>
-                        <td><a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modify">Modificar</a></td>
-                        <td><a href="#" class="btn btn-danger" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
+                        <td><a href="#" class="btn btn-warning button" data-toggle="modal" data-target="#modify">Modificar</a></td>
+                        <td><a href="#" class="btn btn-danger button" data-toggle="modal" data-target="#eliminate">Eliminar</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -95,7 +95,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">
-                            <span>×</span>
+                            <span>x</span>
                         </button>
                         <br>
                         <h4>Modificar Usuario</h4>
