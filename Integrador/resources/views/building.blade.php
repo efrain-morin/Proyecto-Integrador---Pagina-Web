@@ -26,15 +26,14 @@
                     <a href="https://business.facebook.com/Enter-de-San-Luis-2375424602530416/"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/enterdesanluis/?hl=es-la"><i class="fab fa-instagram"></i></a>
                 </div>
+                <form autocomplete="off" action="" class="autocomplete_f">
+                    <div class="autocomplete" style="width:300px;">
+                        <input id="myInput" type="text" name="myCountry" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-outline">Buscar</button>
+                </form>
             </div>
-        </div>
-
-        <form autocomplete="off" action="">
-            <div class="autocomplete" style="width:300px;">
-                <input id="myInput" type="text" name="myCountry" placeholder="Estado">
-            </div>
-            <button type="submit" class="btn btn-outline">Buscar</button>
-        </form>
+        </div>     
 
         <div></div>
         <div class="texto">
