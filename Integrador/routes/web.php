@@ -41,3 +41,19 @@ Route::get('/about-us', function() {
 Route::get('/contact', function() {
     return view('contact');
 });
+
+Route::get('/building', function() {
+    return view('building');
+});
+
+Route::get('/register-building', function() {
+    return view('register-building');
+});
+
+Route::get('/apartments', function() {
+    return view('apartments');
+});
+
+Route::get('/register-apartment', function() {
+    return view('register-apartment');
+});
