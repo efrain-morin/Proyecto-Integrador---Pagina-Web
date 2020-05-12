@@ -1,0 +1,114 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif !important;
+    background-color: white !important;
+}
+
+.barraNaranja {
+    width: 100% !important;
+    background-color: #F58634 !important;
+}
+
+.layoutNaranja {
+    width: 1000px !important;
+    height: 50px !important;
+    margin: 0px auto !important;
+    padding-top: 15px !important;
+}
+
+.layoutNaranja a {
+    text-decoration: none !important;
+    color: #002C55 !important;
+    float: left !important;
+}
+
+.redes-sociales {
+    float: right !important;
+}
+
+.redes-sociales a {
+    padding-left: 30px !important;
+}
+
+.formulario {
+    text-align: center !important;
+}
+
+.formulario p {
+    text-align: center !important;
+    padding-top: 50px !important;
+    color: black !important;
+    font-size: 40px !important;
+}
+
+.registro {
+    padding-top: 80px !important;
+}
+
+.campo {
+    border-radius: 15px !important;
+    height: 30px !important;
+    width: 345px !important;
+    padding-left: 20px !important;
+    outline: none !important;
+    border-color: #F58634 !important;
+    background-color: #295482 !important;
+    color: white !important;
+}
+
+.regist {
+    height: 40px !important;
+    width: 345px !important;
+    color: black !important;
+    border-radius: 30px !important;
+    border-color: #F58634 !important;
+    background-color: #F58634 !important;
+    font-size: 20px !important;
+}
+
+.inicio {
+    margin-left: 40px !important;
+}
+
+.btn-log {
+    height: 40px !important;
+    width: 200px !important;
+    font-size: 25px !important;
+    background-color: #F58634 !important;
+    border: none !important;
+    color: black !important;
+}
+
+.frm-lgn {
+    text-align: center !important;
+    margin: 0px auto !important;
+}
+
+.frm-lgn button[type="submit"]:hover {
+    background-color: #002C55 !important;
+    color: white !important;
+}
+
+.frm-lgn input {
+    border: none !important;
+    border-bottom: 2px solid #F58634 !important;
+    background-color: #295482 !important;
+    color: white !important;
+}
+
+.ipt-text {
+    width: 350px !important;
+    text-align: center !important;
+    margin: 0px auto !important;
+}
+
+.icn-lgn {
+    width: 35px !important;
+    background-color: #F58634 !important;
+    border: none !important;
+    color: black !important;
+}
