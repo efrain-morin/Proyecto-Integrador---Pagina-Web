@@ -1,10 +1,9 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-
 use App\User;
-use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use Faker\Generator as Faker;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,12 +16,21 @@ use Illuminate\Support\Str;
 |
 */
 
-$factory->define(User::class, function (Faker $faker) {
+$factory->define(App\User::class, function (Faker $faker) {
+    static $password;
     return [
-        'name' => $faker->name,
+        'nombre' =>$faker->name,
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => now(),
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+        'password' =>$password ?: $password = bcrypt('getback98'), // password
         'remember_token' => Str::random(10),
+        'apellidoPaterno' => 'Martínez',
+        'apellidoMaterno'  => 'cadena',
+        'fechaNacimiento'  => '03-03-1998',
+        'CURP' => 'MACI980303',
+        'telefono' => '874521',
+        'celular'  => '488875125',
+        'idPermiso' => 1,
+        'idTipoUsuario' => 1,
     ];
 });

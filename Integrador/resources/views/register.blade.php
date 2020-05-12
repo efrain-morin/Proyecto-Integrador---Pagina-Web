@@ -34,6 +34,7 @@
             <br><br><br>
             
             <form class="frm-lgn">
+                @csrf
                 <div class="input-group ipt-text">
                     <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-user"></i></span>
                     <input id="name" type="text" class="form-control" name="name" placeholder="Nombre(s)">

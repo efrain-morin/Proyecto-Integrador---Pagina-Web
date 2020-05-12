@@ -111,7 +111,7 @@ body {
     color: white !important;
 }
 
-.frm-lgn input, select {
+.frm-lgn input {
     border: none !important;
     border-bottom: 2px solid #F58634 !important;
     background-color: #295482 !important;

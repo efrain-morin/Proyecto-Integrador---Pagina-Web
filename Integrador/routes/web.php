@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Login
+Route::post('login','Auth\LoginController@login')->name('login');
 
+Route::get('/', 'Auth\LoginController@index')->name('principal');
 Route::get('/login', function() {
     return view('login');
 });
@@ -42,18 +42,4 @@ Route::get('/contact', function() {
     return view('contact');
 });
 
-Route::get('/building', function() {
-    return view('building');
-});
-
-Route::get('/register-building', function() {
-    return view('register-building');
-});
-
-Route::get('/apartments', function() {
-    return view('apartments');
-});
-
-Route::get('/register-apartment', function() {
-    return view('register-apartment');
-});
+//Ruta para almacenar usuario

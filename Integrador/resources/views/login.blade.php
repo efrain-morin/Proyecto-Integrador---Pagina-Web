@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ 
         <title>Ingresar sesión - Control App</title>
 
         <!-- Icons -->
@@ -29,27 +29,22 @@
 
         <div class="formulario">
             <p>Iniciar Sesión</p>
-            <!--<form action="" method="get" class="registro">
-                <h3>Usuario:</h3>
-                <input type="text" name="name" id="name" class="campo">
-                <h3>Contraseña:</h3>
-                <input type="password" name="pwd" id="pwd" class="campo">
-                <br><br><br>
-            </form>-->
             <br><br>
-            <form class="frm-lgn">
-                <div class="input-group ipt-text">
+        <form class="frm-lgn" method="POST" action="{{route('login')}}">
+            @csrf
+                <div class="input-group ipt-text {{$errors->has('email') ? 'has-error' : ''}} ">
                     <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-user"></i></span>
-                    <input id="user" type="text" class="form-control" name="user" placeholder="Usuario">
+                    <input id="user" type="email" class="form-control" name="email" placeholder="Correo" value="{{old('email')}}">
+                    {!! $errors->first('email','<span class="help-block">:message</span>')!!}
                 </div>
                 <br>
-                <div class="input-group ipt-text">
+                <div class="input-group ipt-text {{$errors->has('password') ? 'has-error' : ''}} ">
                     <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-lock"></i></span>
                     <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña">
+                    {!! $errors->first('password','<span class="help-block">:message</span>')!!}
                 </div>
                 <br><br><br>
-                <!--<button type="submit" value="Inicio" class="btn btn-warning btn-log">Inicio</button>-->
-                <a class="btn btn-warning btn-log" href="/admin" role="button">Inicio</a>
+                <button class="btn btn-primary btn block">Iniciar</button>
             </form>
         </div>
     </body>

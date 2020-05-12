@@ -49,7 +49,7 @@
             <br>
             <a href="https://entersl.com.mx" class="img"><img src="img/logo.svg" alt="EnterSL"></a>
             <button type="button" value="Inicio" class="btn btn-primary inicio">Inicio</button>
-            <a class="btn btn-primary btn-new" href="/building" role="button">Administrar</a>
+            <a class="btn btn-primary btn-new" href="/users" role="button">Administrar</a>
             <a class="btn btn-primary btn-new" href="/" role="button">Salir</a>
             <a class="btn btn-primary btn-new" href="/contact" role="button">Contacto</a>
             
@@ -64,3 +64,4 @@
         </div>
     </body>
 </html>
+ 

@@ -48,14 +48,22 @@
             <br>
             <a href="https://entersl.com.mx" class="img"><img src="img/logo.svg" alt="EnterSL"></a>
             <button type="button" value="Inicio" class="btn btn-primary inicio">Inicio</button>
-            <a class="btn btn-primary btn-new" href="/login" role="button">Ingresar</a>
+            @guest
+                <a class="btn btn-primary btn-new" href="/login" role="button">Ingresar</a>
+            @endguest
+            
             <a class="btn btn-primary btn-new" href="/about-us" role="button">Acerca</a>
             <a class="btn btn-primary btn-new" href="/contact" role="button">Contacto</a>
             
             <div class="info">
                 <p>MI HOGAR</p>
                 <br>
+            @guest
                 <p>Bienvenido</p>
+            @else
+            <p>Bienvenido {{Auth::User()->nombre}}</p>
+            @endguest
+                
                 <h4>La forma mas segura de cuidar tu hogar</h4>
             </div>
             
