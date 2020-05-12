@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
  
-        <title>Ingresar sesión - Control App</title>
+        <title>Ingresar sesión - Control App</title> 
 
         <!-- Icons -->
         <script src="https://kit.fontawesome.com/ab9be42588.js"></script>
