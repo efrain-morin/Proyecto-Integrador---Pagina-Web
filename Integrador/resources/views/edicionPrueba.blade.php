@@ -57,6 +57,7 @@
                             <h4>CP: </h4>
                             <h4>Estado: </h4>
                             <h4>Municipio: </h4>
+                            <img class="img-fluid " src="" alt="Edificio">
                             <br><br>
                     </div>
 
@@ -101,6 +102,7 @@
                                             </div>
                                             <br>
                                         </div>
+                                        
                                             <div class="form-group">
                                                 <div class="input-group ipt-text">
                                                     <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-lock"></i></span>
@@ -109,6 +111,15 @@
                                                 </div>
                                                 <br>
                                             </div>
+                                       
+                                        <div class="form-group">
+                                            <div class="input-group ipt-text">
+                                                <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-lock"></i></span>
+                                                <input id="pwd-re"  type="text" class="form-control" name="per" value="Administrar departamento" readonly="readonly">
+                                                <input type="hidden" value="1" name="permiso">
+                                            </div>
+                                            <br>
+                                        </div>
                                         
 
                                     </div>
@@ -141,6 +152,7 @@
                                             <span class="input-group-addon icn-lgn "><i class="glyphicon glyphicon-lock"></i></span>
                                             <input id="pwd" type="password" class="form-control" name="password" placeholder="Contraseña" required>
                                         </div>
+                                        
                                         <br>
                                         </div>
                                         <div class="form-group">
@@ -158,6 +170,16 @@
                                                 <input type="hidden" value="2" name="tipoUsuario">
                                             </div>
                                             <input value="" type="hidden" class="form-control" name="idInmueble" >
+                                            <br>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="input-group ipt-text">
+                                                <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-lock"></i></span>
+                                                <input id="pwd-re" type="text" class="form-control" name="Admin" value="Inquilino" readonly="readonly">
+                                                <input type="hidden" value="1" name="tipoUsuario">
+                                            </div>
+                                            <input value="" type="hidden" class="form-control" name="idDepartamento" >
                                             <br>
                                         </div>
                                         
