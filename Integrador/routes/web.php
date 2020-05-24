@@ -45,4 +45,8 @@ Route::get('/contact', function() {
     return view('contact');
 });
 
+Route::get('/prueba', function() {
+    return view('edicionPrueba');
+});
+
 //Ruta para almacenar usuario

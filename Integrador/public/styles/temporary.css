@@ -157,15 +157,17 @@ tr:hover td {
 .modal::before {
     content: "";      
     display: inline-block;
-    height: 100%;    
-    margin-right: -4px;
     vertical-align: middle;
 }
 
-.modal-dialog { 
-    display: inline-block;  
-    text-align: left;   
-    vertical-align: middle;
+.modal-dialog {
+    position:absolute;
+    top:50% !important;
+    left: 30% !important;
+    transform: translate(50%, 50%) !important;
+    -ms-transform: translate(0, -50%) !important;
+    -webkit-transform: translate(0, -50%) !important;
+    margin:auto 5%;
 }
 
 .btn-log {
