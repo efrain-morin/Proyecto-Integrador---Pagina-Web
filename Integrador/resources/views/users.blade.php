@@ -15,7 +15,7 @@
 
         <div></div>
 
-        @if (Auth::user()->regresaTipoUsuario(Auth::user()->idTipoUsuario) == "Administrador sistema")
+        @if (Auth::user()->regresaTipoUsuario(Auth::user()->idTipoUsuario) == "Super Usuario")
             <div class="texto">
                 <p>Crear o eliminar usuarios :</p>
             </div>
