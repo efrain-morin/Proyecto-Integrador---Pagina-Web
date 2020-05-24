@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\departamento;
 use Illuminate\Http\Request;
+use App\inmueble;
+use Illuminate\Support\Facades\DB;
 
 class DepartamentoController extends Controller
 {
@@ -12,9 +14,18 @@ class DepartamentoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         //
+        $departamentos = departamento::all();
+        return view('/apartments',[
+            'departamentos'=>$departamentos
+        ]);
     }
 
     /**
@@ -25,6 +36,8 @@ class DepartamentoController extends Controller
     public function create()
     {
         //
+
+
     }
 
     /**
@@ -36,6 +49,12 @@ class DepartamentoController extends Controller
     public function store(Request $request)
     {
         //
+        $departamento = new departamento;
+        $departamento->piso = $request->get('piso');
+        $departamento->numero = $request->get('numero');
+        $departamento->idInmueble1 = $request->get('edificio');
+        $departamento->save();
+        return  redirect()->route('Departamentos.index');
     }
 
     /**
@@ -78,8 +97,21 @@ class DepartamentoController extends Controller
      * @param  \App\departamento  $departamento
      * @return \Illuminate\Http\Response
      */
-    public function destroy(departamento $departamento)
+    public function destroy($id)
     {
-        //
+        $dep = departamento::findOrFail($id);
+        $usuarios = $dep->regresaUsuarios;
+        foreach($usuarios as $us)
+            $us->delete();
+        $dep->delete();
+        return  redirect()->route('Departamentos.index');
+    }
+
+    public function vistaAltaInquilino($id)
+    {
+        $departamento = departamento::findOrFail($id);
+        return view('/register-admin',[
+            'departamento'=>$departamento
+        ]);
     }
 }

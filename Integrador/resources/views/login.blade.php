@@ -28,7 +28,7 @@
         </div>
 
         <div class="formulario">
-            <p>Iniciar Sesión</p>
+            <p>Iniciar Sesión</p> 
             <br><br>
         <form class="frm-lgn" method="POST" action="{{route('login')}}">
             @csrf

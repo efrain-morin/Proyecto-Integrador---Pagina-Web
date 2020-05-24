@@ -158,7 +158,7 @@ tr:hover td {
     margin-bottom: 10px !important;
 }
 
-.frm-lgn input {
+.frm-lgn input, select {
     border: none !important;
     border-bottom: 2px solid #F58634 !important;
     background-color: #295482 !important;
@@ -200,4 +200,68 @@ tr:hover td {
 .modal-footer button[type=submit]:hover {
     background-color: #002C55 !important;
     color: white !important;
+}
+
+.autocomplete {
+    position: relative;
+    float: right;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 20px;
+}
+
+input[type=text] {
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    color: black;
+}
+
+button[type=submit] {
+    float: right;
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+    padding: 0px 8px !important;
+}
+
+button[type=submit]:hover {
+    background-color: #295482;
+    color: white;
+    cursor: pointer;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #dddddd;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #F58634; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color:rgb(100, 223, 75) !important; 
+    color: #ffffff; 
 }

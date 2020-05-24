@@ -15,11 +15,6 @@ class CreateSubInquilinosTable extends Migration
     {
         Schema::create('sub_inquilinos', function (Blueprint $table) {
             $table->bigIncrements('idSubInquilino');
-            $table->bigInteger('idInquilino')->unsigned();
-            $table->foreign('idinquilino')
-            ->references('id')
-            ->on('inquilinos')
-            ->onDelete('cascade');
             $table->bigInteger('idUsuario')->unsigned();
             $table->foreign('idUsuario')
             ->references('id')

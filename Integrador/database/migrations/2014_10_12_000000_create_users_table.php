@@ -27,10 +27,14 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->bigInteger('idPermiso')->unsigned();
             $table->bigInteger('idTipoUsuario')->unsigned();
+            $table->bigInteger('idInmueble')->unsigned()->nullable();
+            $table->bigInteger('idDepartamento')->unsigned()->nullable();
             $table->foreign('idTipoUsuario')->references('id')->on('tipo_usuarios')->onDelete('cascade');
             $table->foreign('idPermiso')->references('id')->on('permisos')->onDelete('cascade');
+            $table->foreign('idInmueble')->references('id')->on('inmuebles')->onDelete('cascade');
+            $table->foreign('idDepartamento')->references('id')->on('departamentos')->onDelete('cascade');
             $table->rememberToken();
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 

@@ -20,6 +20,8 @@ class CreateInmueblesTable extends Migration
             $table->string('codigoPostal');
             $table->string('estado');
             $table->string('municipio');
+            $table->string('nombreEdificio');
+            $table->string('fotoEdificio');
             $table->timestamps();
 
         });

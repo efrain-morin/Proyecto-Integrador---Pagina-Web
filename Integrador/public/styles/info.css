@@ -1,0 +1,19 @@
+.bg-form input {
+    border: none !important;
+    border-bottom: 2px solid #F58634 !important;
+    background-color: #295482 !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+
+.bg-form input[type=submit] {
+    font-size: 20px !important;
+    background-color: #F58634 !important;
+    border: none !important;
+    color: black !important;
+}
+
+.bg-form input[type=submit]:hover {
+    background-color: #002C55 !important;
+    color: white !important;
+}

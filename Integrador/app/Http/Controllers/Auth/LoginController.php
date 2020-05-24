@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Auth;
+//use Illuminate\Support\Facades\Auth as FacadesAuth;
+
 class LoginController extends Controller
 {
     public function login()
@@ -12,6 +14,7 @@ class LoginController extends Controller
             'email' => 'email|required|string',
             'password' => 'required|string'
         ]);
+        
         if(Auth::attempt($info))
         {
             return redirect('/');
@@ -26,5 +29,9 @@ class LoginController extends Controller
     }
     public function index(){
         return view ('welcome');
+    }
+    public function logout(){
+        Auth::logout();;
+        return redirect('/');
     }
 }

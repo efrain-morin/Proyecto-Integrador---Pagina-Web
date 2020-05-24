@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html  lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     @extends('layouts.head')
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Principal - Control App</title>
-
         <!-- Icons -->
         <script src="https://kit.fontawesome.com/ab9be42588.js"></script>
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
@@ -50,20 +47,35 @@
             <button type="button" value="Inicio" class="btn btn-primary inicio">Inicio</button>
             @guest
                 <a class="btn btn-primary btn-new" href="/login" role="button">Ingresar</a>
+            @else
+                @if (Auth::User()->regresaTipoUsuario(Auth::User()->idTipoUsuario) == 'Super Usuario' ||
+                    Auth::User()->regresaPermiso(Auth::User()->idPermiso) == 'Administrar sistema')
+                    <a class="btn btn-primary btn-new" href="{{route('edificios.index')}}" role="button">Edificios</a>
+                @elseif(Auth::User()->regresaTipoUsuario(Auth::User()->idTipoUsuario) == 'Administrador' ||
+                        Auth::User()->regresaPermiso(Auth::User()->idPermiso) == 'Administrar inmueble')
+                    <a class="btn btn-primary btn-new" href="{{route('Departamentos.index')}}" role="button">Departamentos</a>
+                @endif
+                    <a class="btn btn-primary btn-new" 
+                    href="{{ route('logout') }}"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                    </form>
             @endguest
-            
             <a class="btn btn-primary btn-new" href="/about-us" role="button">Acerca</a>
             <a class="btn btn-primary btn-new" href="/contact" role="button">Contacto</a>
-            
+            <a class="btn btn-primary btn-new" href="/Usuarios" role="button">Usuarios</a>
             <div class="info">
                 <p>MI HOGAR</p>
                 <br>
-            @guest
-                <p>Bienvenido</p>
-            @else
-            <p>Bienvenido {{Auth::User()->nombre}}</p>
-            @endguest
-                
+                @guest
+                    <p>Bienvenido</p>
+                @else
+                <p>Bienvenido {{Auth::User()->nombre}}</p>
+                @endguest
+                    
                 <h4>La forma mas segura de cuidar tu hogar</h4>
             </div>
             

@@ -6,7 +6,10 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\tipoUsuario;
-use App\User;
+use App\permiso;
+use PhpParser\Node\Expr\AssignOp\Concat;
+use Illuminate\Support\Facades\DB;
+
 class User extends Authenticatable
 {
     use Notifiable;
@@ -37,12 +40,33 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    
-    public function Inquilino(){
-        return $this->hasMany('App\Inquilino');
-    }
+
     public function RegresaTipoUsuario($id){
         $TipoUser = tipoUsuario::find($id);
         return $TipoUser->tipoUsuario;
+    }
+
+    public function RegresaNombre($id){
+        $usuario = user::find($id);
+        $nombreCompleto = $usuario->nombre . " " . $usuario->apellidoPaterno . " " . $usuario->apellidoMaterno;
+        return $nombreCompleto;
+    }
+
+    public function RegresaPermiso($id){
+        $permiso = permiso::find($id);
+
+        return $permiso->tipoPermiso;
+    }
+
+    public function RegresaInformacion($id){
+        $usuario = User::find($id);
+        $datos = array($usuario->id,$usuario->nombre,$usuario->apellidoPaterno,$usuario->apellidoMaterno,$usuario->fechaNacimiento,
+        $usuario->CURP, $usuario->email,$usuario->telefono, $usuario->celular);
+        return json_encode($datos);
+        
+    }
+    public function RegresaEdificio($id)
+    {
+        return DB::table('inmuebles')->where('id',$id)->get();
     }
 }
