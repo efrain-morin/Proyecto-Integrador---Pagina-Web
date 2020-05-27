@@ -16,7 +16,7 @@ Route::get('/alta-Administrador/{id}','inmuebleController@regresaInmueble')->nam
 Route::post('/alta-Administrador','HomeController@registro');
 
 
-//Usuarios
+//Usuarios 
 Route::get('/Usuarios','HomeController@regresaUsuarios')->name('Usuarios');
 Route::get('/alta-Usuario','HomeController@vistaCreaUsuario')->name('AltaUsuarios');
 Route::post('/registro', 'HomeController@registro');
@@ -29,24 +29,9 @@ Route::resource('/Departamentos','DepartamentoController');
 Route::get('/alta-Inquilino/{id}','DepartamentoController@vistaAltaInquilino')->name('alta-Inquilino');
 Route::delete('/baja-departamento/{id}','DepartamentoController@destroy');
 
-Route::get('/modify-user', function() {
-    return view('modify-user');
-});
-
-Route::get('/temporary-users', function() {
-    return view('temporary-users');
-});
 
 Route::get('/about-us', function() {
     return view('about');
-});
-
-Route::get('/contact', function() {
-    return view('contact');
-});
-
-Route::get('/prueba', function() {
-    return view('edicionPrueba');
 });
 
 //Ruta para almacenar usuario

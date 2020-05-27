@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    @extends('layouts.head')
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Registro Administrador Edificio - Control App</title>
-
-        <!-- Icons -->
-        <script src="https://kit.fontawesome.com/ab9be42588.js"></script>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <link rel="stylesheet" type="text/css" href="styles/register-admin.css">
-    </head>
-    <body>
-        <div class="barraNaranja">
-            <div class="layoutNaranja">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <a href="http://entersl.com.mx"><b>entersl.com.mx</b></a>
-                            <a href="/admin" class="btn btn-outline-light inicio">Inicio</a>
-                            <a href="/users" class="btn btn-outline-light inicio">Usuarios</a>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="redes-sociales">
-                                <a href="https://business.facebook.com/Enter-de-San-Luis-2375424602530416/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/enterdesanluis/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+@extends('layouts.head')
+@section('Titulo',"Registro Administrador Edificio")
+@section('Contenido')
+        <link rel="stylesheet"  href="{{ asset('styles/register-admin.css') }}">
         <div class="formulario">
             <p>REGISTRO</p>
             @if (Auth::user()->RegresaTipoUsuario(Auth::user()->idTipoUsuario)=="Administrador")
@@ -44,7 +9,7 @@
             @else
                 <h4>Alta de Administrador para edificio</h4>
             @endif
-            <br><br><br>
+            <br>
             <div class="container-fluid">
                 <div class="row">
                     @if (Auth::user()->RegresaTipoUsuario(Auth::user()->idTipoUsuario) == "Administrador")
@@ -55,12 +20,21 @@
                     @endif
                     <div class="col-sm-4">
                             <h4>Edificio: {{$edificio->nombreEdificio}}</h4>
+                            <br>
                             <h4>Calle: {{$edificio->calle}}.</h4>
+                            <br>
                             <h4>Colonia: {{$edificio->colonia}}.</h4>
+                            <br>
                             <h4>CP: {{$edificio->codigoPostal}}.</h4>
+                            <br>
                             <h4>Estado: {{$edificio->estado}}.</h4>
+                            <br>
                             <h4>Municipio: {{$edificio->municipio}}.</h4>
-                            <img class="img-fluid " src="/storage/{{$edificio->fotoEdificio}}" alt="Edificio">
+                            <br>
+                            <div class="text-center">
+                                <img class="img-fluid rounded" src="/storage/{{$edificio->fotoEdificio}}" alt="Edificio">
+                              </div>
+                            
                             <br><br>
                     </div>
 
@@ -196,5 +170,4 @@
                 </div>
             </div>
         </div>
-    </body>
-</html>
+@endsection

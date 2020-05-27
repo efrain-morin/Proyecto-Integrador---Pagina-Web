@@ -45,7 +45,7 @@ class User extends Authenticatable
         $TipoUser = tipoUsuario::find($id);
         return $TipoUser->tipoUsuario;
     }
-
+ 
     public function RegresaNombre($id){
         $usuario = user::find($id);
         $nombreCompleto = $usuario->nombre . " " . $usuario->apellidoPaterno . " " . $usuario->apellidoMaterno;
@@ -69,4 +69,10 @@ class User extends Authenticatable
     {
         return DB::table('inmuebles')->where('id',$id)->get();
     }
+    public function RegresaDepartamento($id)
+    {
+        $departamento =  DB::table('departamentos')->where('id',$id)->get();
+        return $departamento[0]->numero;
+    }
+    
 }

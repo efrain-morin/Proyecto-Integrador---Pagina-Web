@@ -1,46 +1,12 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    @extends('layouts.head')
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Edificios - Control App</title>
-
-        <!-- Icons -->
-        <script src="https://kit.fontawesome.com/ab9be42588.js"></script>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+@extends('layouts.head')
+@section('Titulo',"Información de los edificios")
+@section('Contenido')
         <link rel="stylesheet" type="text/css" href="styles/building.css">
-
-    </head>
-    <body>
-        <div class="barraNaranja">
-            <div class="layoutNaranja">
-                <a href="http://entersl.com.mx"><b>entersl.com.mx</b></a>
-                <a href="/admin" class="btn btn-outline-light inicio">Inicio</a>
-                <div class="redes-sociales">
-                    <a href="https://business.facebook.com/Enter-de-San-Luis-2375424602530416/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/enterdesanluis/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                </div>
-                <form autocomplete="off" action="" class="autocomplete_f">
-                    <div class="autocomplete" style="width:300px;">
-                        <input id="myInput" type="text" name="myCountry" placeholder="">
-                    </div>
-                    <button type="submit" class="btn btn-outline">Buscar</button>
-                </form>
-            </div>
-        </div>     
-
-        <div></div>
         <div class="texto">
             <p>Crear, modificar o eliminar edificios:</p>
         </div>
         <div class="table table-responsive">
-            <table class="table">
+            <table class="table table-striped">
                 <thead class="thead-dark">
                     <tr>
                         <th>Nombre del edificio</th>
@@ -142,7 +108,7 @@
                             <br>
                             <div class="input-group ipt-text">
                                 <span class="input-group-addon icn-lgn"><i class="glyphicon glyphicon-lock"></i></span>
-                                <input id="state" type="text" class="form-control" name="foto" placeholder="Foto del edificio">
+                                <input id="state" type="file" class="form-control" name="foto" placeholder="Foto del edificio">
                             </div>
                             <br><br>
                             <button type="reset" value="cancelar" class="btn btn-info btn-log2" data-dismiss="modal">Cancelar</button>
@@ -207,5 +173,4 @@
                 document.getElementById('nombreEdificio').value=$datos[6];
             }
         </script>
-    </body>
-</html>
+@endsection

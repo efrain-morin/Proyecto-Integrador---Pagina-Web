@@ -1,45 +1,15 @@
-* {
-    margin: 0 !important;
-    padding: 0 !important;
-}
+
 
 body {
     font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
-.barraNaranja {
-    width: 100% !important;
-    background-color: #F58634 !important;
-}
-
-.layoutNaranja {
-    
-    height: 50px !important;
-    margin: 0px auto !important;
-    padding-top: 15px !important;
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-}
-
-.layoutNaranja a {
-    text-decoration: none !important;
-    color: #002C55 !important;
-    float: left !important;
-}
-
-.redes-sociales {
-    float: right !important;
-}
-
-.redes-sociales a {
-    padding-left: 30px !important;
-}
 
 .formulario p {
     text-align: center !important;
-    padding-top: 50px !important;
+    padding-top: 10px !important;
     color: black !important;
-    font-size: 40px !important;
+    font-size: 30px !important;
 }
 
 .formulario h4 {
@@ -49,7 +19,7 @@ body {
 
 .registro {
     padding-left: 130px !important;
-    padding-top: 40px !important;
+    padding-top: 15px !important;
 }
 
 .registro h3 {

@@ -1,38 +1,9 @@
-* {
-    margin: 0 !important;
-    padding: 0 !important;
-}
 
 body {
     font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif !important;
     background-color: rgb(94, 95, 95) !important;
 }
 
-.barraNaranja {
-    width: 100% !important;
-    background-color: #F58634 !important;
-}
-
-.layoutNaranja {
-    width: 1000px !important;
-    height: 50px !important;
-    margin: 0px auto !important;
-    padding-top: 15px !important;
-}
-
-.layoutNaranja a {
-    text-decoration: none !important;
-    color: #002C55 !important;
-    float: left !important;
-}
-
-.redes-sociales {
-    float: right !important;
-}
-
-.redes-sociales a {
-    padding-left: 30px !important;
-}
 
 .formulario {
     text-align: center !important;

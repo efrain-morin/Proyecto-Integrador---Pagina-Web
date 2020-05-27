@@ -2,18 +2,6 @@
 @section('Titulo',"Usuarios administrador - Control App")
 @section('Contenido')
 <link rel="stylesheet" href="styles/users.css">
-        <div class="barraNaranja">
-            <div class="layoutNaranja">
-                <a href="http://entersl.com.mx"><b>entersl.com.mx</b></a>
-                <a href="/" class="btn btn-outline-light inicio">Inicio</a>
-                <div class="redes-sociales">
-                    <a href="https://business.facebook.com/Enter-de-San-Luis-2375424602530416/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/enterdesanluis/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div></div>
 
         @if (Auth::user()->regresaTipoUsuario(Auth::user()->idTipoUsuario) == "Super Usuario")
             <div class="texto">
@@ -69,7 +57,7 @@
                                 <tr>
                                     @if ($usuario->RegresaTipoUsuario($usuario->idTipoUsuario) == "Inquilino")
                                         <td>{{$usuario->RegresaNombre($usuario->id)}}</td>
-                                        <td>{{$usuario->RegresaDepartamento($usuario->id)}}</td>
+                                        <td>{{$usuario->RegresaDepartamento($usuario->idDepartamento)}}</td>
                                         <td>{{$usuario->email}}</td>
                                         <td><a href="#" class="btn btn-danger button" data-toggle="modal" data-target="#eliminate"
                                             onclick="PasaDato({{$usuario->id}})">Eliminar</a></td>
@@ -153,7 +141,7 @@
             </div>
         </div>-->
 
-        <div class="modal fade" id="eliminate">
+        <div class="modal fade modal-lg" id="eliminate">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -183,18 +171,6 @@
         var id = $iduser;
         document.getElementById('form-eliminar').setAttribute('action','/bajaUsuario/'+id);
     }
-    /*function modificaUsuario($informacion){
-        var id = $informacion[0];
-        document.getElementById('form-editar').setAttribute('action','/Usuarios/'+id);
-        document.getElementById('nombre').value=$informacion[1];
-        document.getElementById('apP').value=$informacion[2];
-        document.getElementById('apM').value=$informacion[3];
-        document.getElementById('fechaNac').value=$informacion[4];
-        document.getElementById('CURP').value=$informacion[5];
-        document.getElementById('email').value=$informacion[6];
-        document.getElementById('tel').value=$informacion[7];
-        document.getElementById('cel').value=$informacion[8];
-    }*/
 </script>
 
 @endsection
